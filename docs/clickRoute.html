@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.d1d55038.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.8feb9419.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.dd00a411.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.1217e878.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.1e3895cd.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/5.4647710b.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+<head><style>body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    main {
+      padding: 1em;
+      max-width: 240px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      text-align: center;
+      color: #333;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 0.5em 1em;
+      font-size: 1em;
+      background-color: #4287f5;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #1a5bc9;
+    }
+
+    p {
+      font-size: 1em;
+      text-align: center;
+      color: #666;
+      margin-top: 1em;
+    }
+
+    span {
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .upgrade {
+      margin-top: 1em;
+    }
+
+    .upgrade button {
+      background-color: #4caf50;
+    }
+
+    .upgrade button:hover {
+      background-color: #45a049;
+    }
+  </style></head>
+<body><script>let count = 0;
+    let clickValue = 1;
+    let upgradeCost = 10;
+
+    function handleClick() {
+      count += clickValue;
+      document.getElementById('count-display').innerText = count;
+    }
+
+    function purchaseUpgrade() {
+      if (count >= upgradeCost) {
+        count -= upgradeCost;
+        clickValue++;
+        upgradeCost *= 2;
+        document.getElementById('count-display').innerText = count;
+        document.getElementById('click-value').innerText = clickValue;
+        document.getElementById('upgrade-cost').innerText = upgradeCost;
+      }
+    }
+  </script>
+  
+  <main><h1>Clicker Game</h1>
+    <button onclick="handleClick()">Click Me</button>
+    <p>Click count: <span id="count-display">0</span></p>
+    
+    <div class="upgrade"><button onclick="purchaseUpgrade()">Increase Click Value</button>
+      <p>Current Click Value: <span id="click-value">1</span></p>
+      <p>Upgrade Cost: <span id="upgrade-cost">10</span></p></div></main></body>
+
+
+			
+			<script>
+				{
+					__sveltekit_xpfo6x = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.d1d55038.js"),
+						import("./_app/immutable/entry/app.1217e878.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 5],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
