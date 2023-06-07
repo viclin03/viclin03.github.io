@@ -1,6 +1,6 @@
 
 <head>
-    <title>Navigation Page</title>
+    <title>Victor's Goofy Funny Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
