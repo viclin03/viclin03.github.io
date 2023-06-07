@@ -66,7 +66,7 @@ body {
 </head>
 <body>
     <header>
-        <h1>Navigation Page</h1>
+        <h1>Victor's Goofy Funny Website</h1>
     </header>
     <nav>
         <ul>
